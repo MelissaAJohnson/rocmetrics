@@ -1,16 +1,16 @@
 source 'https://rubygems.org'
 
  # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
- gem 'rails', '4.2.5'
+ gem 'rails', '5.0'
 
  group :production do
-   gem 'pg'
    gem 'rails_12factor'
  end
 
  group :development do
    gem 'sqlite3'
    gem 'better_errors'
+   gem 'listen'
  end
 
  gem 'sass-rails', '~> 5.0'
@@ -22,6 +22,8 @@ source 'https://rubygems.org'
  gem 'pry'
  gem 'bootstrap-sass', '~> 3.2.0'
  gem 'bootswatch-rails'
+ gem 'devise'
+ gem 'pg'
 
  group :development, :test do
    gem 'byebug'
