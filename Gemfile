@@ -37,6 +37,6 @@ source 'https://rubygems.org'
    gem 'rails-controller-testing'
  end
 
- group :test, require: nil do
+ group :test do
    gem 'codeclimate-test-reporter'
  end
