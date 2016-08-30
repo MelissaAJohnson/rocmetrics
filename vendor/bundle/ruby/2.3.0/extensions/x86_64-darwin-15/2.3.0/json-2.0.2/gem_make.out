@@ -1,0 +1,13 @@
+current directory: /Users/Missy/bloc/rocmetrics/vendor/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+/Users/Missy/.rvm/rubies/ruby-2.3.1/bin/ruby -r ./siteconf20160829-38579-191u7e8.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Missy/bloc/rocmetrics/vendor/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/Missy/bloc/rocmetrics/vendor/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/Missy/bloc/rocmetrics/vendor/bundle/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR=" install
