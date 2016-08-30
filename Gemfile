@@ -36,3 +36,7 @@ source 'https://rubygems.org'
    gem 'simplecov'
    gem 'rails-controller-testing'
  end
+
+ group :test, require: nil do
+   gem 'codeclimate-test-reporter'
+ end
