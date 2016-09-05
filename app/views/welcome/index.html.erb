@@ -1,4 +1,10 @@
 <div class = 'container'>
-  <h1>Welcome#index</h1>
-  <p>Find me in app/views/welcome/index.html.erb</p>
+  <span style = 'font-size:200%'><strong>All Applications</strong></span>
+  &nbsp;&nbsp;
+  <%= link_to "+ Register App", new_application_path, style: 'color:blue'%>
+  <br /><br />
+  <% @app.each do |application| %>
+    <p><%= link_to application.name, application %></p>
+  <% end %>
+
 </div>
