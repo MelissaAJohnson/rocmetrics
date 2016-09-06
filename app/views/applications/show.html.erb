@@ -1,0 +1,22 @@
+<div class = 'container'>
+  <span style = 'font-size: 150%'><strong><%= @app.name %></strong></span>&nbsp;&nbsp;
+
+  <%= link_to edit_application_path(@app) do %>
+    <span style = 'font-size:11pt'>
+      <span class='has-tooltip' data-toggle='tooltip' title='Edit App'>
+        <span class = 'glyphicon glyphicon-pencil'></span>
+      </span>
+    </span>
+  <% end %>
+  &nbsp;&nbsp;
+  <%= link_to @app, method: :delete, data: {confirm: 'Are you sure you want to unregister this application?'} do %>
+    <span style = 'font-size:11pt'>
+      <span class = 'has-tooltip' data-toggle='tooltip' title='Unregister App'>
+        <span style = 'color:red' class = 'glyphicon glyphicon-trash'></span>
+      </span>
+    </span>
+  <% end %>
+
+  <br />
+  <p><%= @app.url %></p>
+</div>

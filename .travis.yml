@@ -17,3 +17,7 @@ script:
 notifications:
   recipients:
     - <your email>
+
+addons:
+    code_climate:
+        repo_token: 31058a429f3b0548636c2ec1280872d773f21ea8baa41d3406322d93a82ec4c3

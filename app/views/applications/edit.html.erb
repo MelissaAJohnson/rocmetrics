@@ -1,0 +1,13 @@
+<div class = 'container'>
+  <h3>Edit Application</h3>
+
+  <%= form_for @app do |f| %>
+    <div class = 'form-group'>
+      <%= f.text_field :name, class: 'form-control', placeholder: "App Name" %>
+      <br />
+      <%= f.text_field :url, class: 'form-control', placeholder: "URL" %>
+      <br />
+      <%= f.submit "Save", class: 'btn btn-primary' %>&nbsp;&nbsp;<%= link_to "Cancel", :back %>
+    </div>
+  <% end %>
+</div>

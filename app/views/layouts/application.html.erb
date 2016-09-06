@@ -11,13 +11,16 @@
   <div class = 'container'>
     <br />
     <% if user_signed_in? %>
-      <div class = 'pull-right', style = 'text-align: bottom'>
-        Signed in as: <strong><%= current_user.email %></strong><br />
-        <%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link' %>
-        | <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
-      </div>
+
+        <%= link_to 'RocMetrics', root_url, style: "font-size: 250%; color:black; text-decoration: none;" %>
+        <div class = 'pull-right', style = 'text-align: top'>
+          Signed in as: <strong><%= current_user.email %></strong><br />
+          <%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link' %>
+          | <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
+        </div>
+
     <% end %>
-    <br /><br />
+    <br />
     <hr />
     <div class = 'flash'>
       <% if flash[:notice] %>
