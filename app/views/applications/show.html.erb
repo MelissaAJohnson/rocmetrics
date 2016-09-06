@@ -1,5 +1,5 @@
 <div class = 'container'>
-  <span style = 'font-size: 150%'><strong><%= @app.name %></strong></span>&nbsp;&nbsp;
+  <span style = 'font-size: 200%'><strong><%= @app.name %></strong></span>&nbsp;&nbsp;
 
   <%= link_to edit_application_path(@app) do %>
     <span style = 'font-size:11pt'>
@@ -19,4 +19,9 @@
 
   <br />
   <p><%= @app.url %></p>
+
+  <h3>events</h3>
+  <% @events.each do |event, count| %>
+    <%= "#{event}: #{count.length}" %><br />
+  <% end %>
 </div>

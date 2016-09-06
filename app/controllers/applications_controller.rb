@@ -5,6 +5,7 @@ class ApplicationsController < ApplicationController
 
   def show
     @app = Application.find(params[:id])
+    @events = @app.events.group_by(&:name)
   end
 
   def new
