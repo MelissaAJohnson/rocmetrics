@@ -21,7 +21,9 @@
   <p><%= @app.url %></p>
 
   <h3>events</h3>
+  <%= pie_chart @app.events.group(:name).count %><br /><br />
   <% @events.each do |event, count| %>
-    <%= "#{event}: #{count.length}" %><br />
+    <strong><%= "#{event}" %></strong>: <%= "#{count.length}" %><br />
+    <%= line_chart @app.events.group_by_day(:created_at).count %><br />
   <% end %>
 </div>
