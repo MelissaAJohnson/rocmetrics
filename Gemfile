@@ -25,6 +25,7 @@ source 'https://rubygems.org'
  gem 'bootswatch-rails'
  gem 'devise'
  gem 'pg'
+ gem 'rack-cors', :require => 'rack/cors'
 
  group :development, :test do
    gem 'byebug'

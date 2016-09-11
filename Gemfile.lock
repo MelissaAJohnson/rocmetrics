@@ -118,6 +118,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     rack (2.0.1)
+    rack-cors (0.4.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.0)
@@ -241,6 +242,7 @@ DEPENDENCIES
   listen
   pg
   pry
+  rack-cors
   rails (= 5.0)
   rails-controller-testing
   rails_12factor
