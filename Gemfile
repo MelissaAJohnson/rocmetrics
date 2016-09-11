@@ -26,6 +26,8 @@ source 'https://rubygems.org'
  gem 'devise'
  gem 'pg'
  gem 'rack-cors', :require => 'rack/cors'
+ gem "chartkick"
+ gem "groupdate"
 
  group :development, :test do
    gem 'byebug'
